@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity() {
                 output.text = getString(R.string.you_are_healthy)
                 output.setBackgroundColor(getColor(R.color.green))
             }
+
         }
     }
 }
