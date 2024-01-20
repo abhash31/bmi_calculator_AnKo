@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BMI Plus</string>
+    <string name="banner">BMI Calculator</string>
+    <string name="edtWeightHint">Enter Your Weight (kgs.)</string>
+    <string name="edtHeightFtHint">Enter Your Height (ft.)</string>
+    <string name="edtHeightInHint">Enter Your Height (in.)</string>
+    <string name="btnCalc">Calculate</string>
+    <string name="you_are_healthy">You are Healthy!</string>
+    <string name="you_are_underweight">You are UnderWeight!</string>
+    <string name="you_are_overweight">You are OverWeight!</string>
+</resources>
