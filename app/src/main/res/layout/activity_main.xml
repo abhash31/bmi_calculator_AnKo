@@ -37,18 +37,18 @@
         android:ems="12"
         android:layout_marginTop="10dp"
         android:autofillHints="none"
-        android:inputType="number"/>
+        android:inputType="numberDecimal"/>
 
-    <EditText
-        android:id="@+id/edtHeightIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/edtHeightInHint"
-        android:textSize="20sp"
-        android:ems="12"
-        android:layout_marginTop="10dp"
-        android:autofillHints="none"
-        android:inputType="number"/>
+<!--    <EditText-->
+<!--        android:id="@+id/edtHeightIn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="@string/edtHeightInHint"-->
+<!--        android:textSize="20sp"-->
+<!--        android:ems="12"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:autofillHints="none"-->
+<!--        android:inputType="number"/>-->
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCalc"

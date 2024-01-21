@@ -16,19 +16,20 @@ class MainActivity : AppCompatActivity() {
 
         val edtWeight = findViewById<EditText>(R.id.edtWeight)
         val edtHeightFt = findViewById<EditText>(R.id.edtHeightFt)
-        val edtHeightIn = findViewById<EditText>(R.id.edtHeightIn)
+//        val edtHeightIn = findViewById<EditText>(R.id.edtHeightIn)
         val btnCalc = findViewById<Button>(R.id.btnCalc)
         val output = findViewById<TextView>(R.id.tvOutput)
 
         fun bmiCalculate(): Double {
             try {
                 val kgs = edtWeight.text.toString().toInt()
-                val ft = edtHeightFt.text.toString().toInt()
-                val inch = edtHeightIn.text.toString().toInt()
+                val ft = edtHeightFt.text.toString().toDouble()
+//                val inch = edtHeightIn.text.toString().toInt()
 
-                val totalIn = (ft*12)+inch
-                val totalCm = totalIn*2.53
-                val totalM = totalCm/100
+//                val totalIn = ft/3.281
+//                val totalCm = totalIn*2.53
+//                val totalM = totalCm/100
+                val totalM = ft/3.281
                 return kgs/(totalM*totalM)
             } catch(e: Exception){
                 Toast.makeText(this, "Please Enter Valid Inputs", Toast.LENGTH_SHORT).show()
@@ -49,7 +50,6 @@ class MainActivity : AppCompatActivity() {
                 output.text = getString(R.string.you_are_healthy)
                 output.setBackgroundColor(getColor(R.color.green))
             }
-
 
         }
     }
